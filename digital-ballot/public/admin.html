@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ניהול הקלפי</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-name">ניהול הקלפי הדיגיטלי</span></div></header>
+<main>
+  <div class="results" style="max-width:520px">
+    <h2>כניסת מנהל</h2>
+    <form id="login" autocomplete="off">
+      <label for="tok">קוד ניהול</label><br>
+      <input id="tok" type="password" required style="width:100%;font:inherit;padding:12px;margin:8px 0 14px;border:2px solid var(--line);border-radius:12px">
+      <button class="btn primary" type="submit">כניסה</button>
+    </form>
+    <p id="msg" role="alert" class="fine"></p>
+    <div id="panel" hidden>
+      <p>מצב ההצבעה: <strong id="state"></strong></p>
+      <div class="actions" style="justify-content:flex-start">
+        <button class="btn primary" id="toggle" type="button"></button>
+        <button class="btn ghost" id="reset" type="button">איפוס הסקר</button>
+      </div>
+      <p class="fine">איפוס מוחק את כל הקולות ללא אפשרות שחזור. הקוד נשמר בזיכרון הדף בלבד ואינו נשמר בדפדפן.</p>
+    </div>
+  </div>
+</main>
+<script src="/admin.js"></script>
+</body>
+</html>
